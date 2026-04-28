@@ -83,8 +83,8 @@ export default function Dashboard() {
   <tbody>
     <tr className="border-b border-white/10">
       <td className="py-3">#1234</td>
-      <td>Ravi Kitchen</td>
-      <td>John</td>
+      <td>Sandeep's Kitchen</td>
+      <td>Bobi</td>
       <td className="text-right">₹250</td>
       <td className="text-right text-green-400">Delivered</td>
     </tr>
@@ -92,7 +92,7 @@ export default function Dashboard() {
     <tr>
       <td className="py-3">#1235</td>
       <td>Home Taste</td>
-      <td>Alice</td>
+      <td>Chocolate</td>
       <td className="text-right">₹180</td>
       <td className="text-right text-yellow-400">Pending</td>
     </tr>
