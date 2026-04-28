@@ -1,4 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+
   <defs>
     <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#ff7a18"/>
@@ -6,25 +7,23 @@
     </linearGradient>
   </defs>
 
-  <!-- White background with black border -->
-  <rect x="2" y="2" width="60" height="60" rx="14"
-        fill="white" stroke="black" stroke-width="3"/>
-
-  <!-- Pot body -->
-  <rect x="10" y="28" width="44" height="20" rx="8"
-        fill="url(#g)" stroke="black" stroke-width="2"/>
+  <!-- Pot body (maximized) -->
+  <rect x="4" y="28" width="56" height="24" rx="12"
+        fill="url(#g)" stroke="black" stroke-width="2.5"/>
 
   <!-- Lid -->
-  <rect x="14" y="18" width="36" height="10" rx="5"
-        fill="#ff7a18" stroke="black" stroke-width="2"/>
+  <rect x="8" y="14" width="48" height="14" rx="7"
+        fill="#ff7a18" stroke="black" stroke-width="2.5"/>
 
   <!-- Knob -->
-  <circle cx="32" cy="16" r="3"
-          fill="#ffb347" stroke="black" stroke-width="1.5"/>
+  <circle cx="32" cy="12" r="4.5"
+          fill="#ffb347" stroke="black" stroke-width="2"/>
 
-  <!-- Steam (bold for visibility) -->
-  <path d="M26 14 C24 10, 30 10, 28 6"
-        stroke="black" stroke-width="2" fill="none"/>
-  <path d="M38 14 C36 10, 42 10, 40 6"
-        stroke="black" stroke-width="2" fill="none"/>
+  <!-- Steam (minimal + bold) -->
+  <path d="M26 12 C24 8, 32 8, 30 4"
+        stroke="black" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+  <path d="M38 12 C36 8, 44 8, 42 4"
+        stroke="black" stroke-width="3" stroke-linecap="round" fill="none"/>
+
 </svg>
