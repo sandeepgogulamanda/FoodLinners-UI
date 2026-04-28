@@ -6,9 +6,6 @@
     </linearGradient>
   </defs>
 
-  <!-- Background -->
-  <rect width="64" height="64" rx="16" fill="#0f0f0f"/>
-
   <!-- Pot -->
   <rect x="16" y="28" width="32" height="16" rx="6" fill="url(#g)"/>
 
