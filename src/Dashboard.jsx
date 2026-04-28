@@ -69,35 +69,35 @@ export default function Dashboard() {
         <div className="bg-white/10 p-5 rounded-xl border border-white/10">
           <h3 className="mb-4 font-semibold">Recent Orders</h3>
 
-          <table className="w-full text-sm">
-            <thead className="text-gray-400 border-b border-white/10">
-              <tr>
-                <th className="py-2">Order ID</th>
-                <th>Chef</th>
-                <th>Customer</th>
-                <th>Amount</th>
-                <th>Status</th>
-              </tr>
-            </thead>
+          <table className="w-full text-sm border-collapse">
+  <thead className="text-gray-400 border-b border-white/10">
+    <tr>
+      <th className="py-3 text-left w-[15%]">Order ID</th>
+      <th className="text-left w-[25%]">Chef</th>
+      <th className="text-left w-[25%]">Customer</th>
+      <th className="text-right w-[15%]">Amount</th>
+      <th className="text-right w-[20%]">Status</th>
+    </tr>
+  </thead>
 
-            <tbody>
-              <tr className="border-b border-white/10">
-                <td className="py-2">#1234</td>
-                <td>Ravi Kitchen</td>
-                <td>John</td>
-                <td>₹250</td>
-                <td className="text-green-400">Delivered</td>
-              </tr>
+  <tbody>
+    <tr className="border-b border-white/10">
+      <td className="py-3">#1234</td>
+      <td>Ravi Kitchen</td>
+      <td>John</td>
+      <td className="text-right">₹250</td>
+      <td className="text-right text-green-400">Delivered</td>
+    </tr>
 
-              <tr>
-                <td className="py-2">#1235</td>
-                <td>Home Taste</td>
-                <td>Alice</td>
-                <td>₹180</td>
-                <td className="text-yellow-400">Pending</td>
-              </tr>
-            </tbody>
-          </table>
+    <tr>
+      <td className="py-3">#1235</td>
+      <td>Home Taste</td>
+      <td>Alice</td>
+      <td className="text-right">₹180</td>
+      <td className="text-right text-yellow-400">Pending</td>
+    </tr>
+  </tbody>
+</table>
         </div>
 
       </div>
