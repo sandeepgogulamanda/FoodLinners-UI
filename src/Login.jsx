@@ -38,75 +38,49 @@ export default function App() {
   };
 
   return (
-    <div
-      className="min-h-screen bg-cover bg-center flex items-center justify-center relative"
-      style={{
-        backgroundImage: "url('/admin-bg.png')",
-      }}
-    >
-      {/* Dark overlay for admin feel */}
-      <div className="absolute inset-0 bg-black/70"></div>
+ <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#0f0f0f] via-[#1a1a1a] to-[#2b1d0e]">
 
-      {/* LEFT CONTENT (Brand + Vision) */}
-      <div className="hidden md:flex flex-col justify-center text-white max-w-lg px-10 relative z-10">
-        <h1 className="text-5xl font-bold leading-tight mb-4">
-          Real Kitchens.
-          <br />
-          Real Homemade.
-          <span className="text-orange-400"> Real Good.</span>
-        </h1>
+      {/* Glow Effects */}
+      <div className="absolute w-[400px] h-[400px] bg-orange-500/20 rounded-full blur-3xl top-0 left-0 -translate-x-1/2 -translate-y-1/2"></div>
 
-        <p className="text-gray-300 mb-6">
-          Empowering home chefs to deliver authentic meals.
-          Manage kitchens, monitor quality, and scale trust.
-        </p>
+      <div className="absolute w-[300px] h-[300px] bg-orange-400/10 rounded-full blur-2xl bottom-0 right-0 translate-x-1/2 translate-y-1/2"></div>
 
-        <div className="flex gap-6 text-sm">
-          <div>🍲 Home Chefs</div>
-          <div>🧼 Quality Control</div>
-          <div>🚚 Delivery Ops</div>
-        </div>
-      </div>
-
-      {/* LOGIN CARD */}
-      <div className="relative z-10 bg-white/10 backdrop-blur-lg border border-white/20 text-white shadow-2xl rounded-2xl p-8 w-full max-w-md">
+      {/* Login Card */}
+      <div className="relative z-10 bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-8 w-full max-w-md text-white shadow-2xl">
         
-        <h2 className="text-2xl font-semibold text-center mb-6">
+        <h2 className="text-2xl font-semibold text-center mb-2">
           Admin Login 🔐
         </h2>
+
+        <p className="text-center text-gray-400 text-sm mb-6">
+          Manage kitchens, chefs & orders
+        </p>
 
         <form onSubmit={handleLogin} className="space-y-4">
           
           <input
             type="email"
             placeholder="admin@example.com"
-            className="w-full px-4 py-2 rounded-lg bg-white/20 placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-400"
+            className="w-full px-4 py-2 rounded-lg bg-white/10 border border-white/20 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-400"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            required
           />
 
           <input
             type="password"
             placeholder="••••••••"
-            className="w-full px-4 py-2 rounded-lg bg-white/20 placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-400"
+            className="w-full px-4 py-2 rounded-lg bg-white/10 border border-white/20 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-400"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            required
           />
 
           <button
             type="submit"
-            disabled={loading}
-            className="w-full bg-orange-500 py-2 rounded-lg hover:bg-orange-600 transition"
+            className="w-full bg-gradient-to-r from-orange-500 to-orange-600 py-2 rounded-lg hover:opacity-90 transition"
           >
-            {loading ? "Authenticating..." : "Secure Login"}
+            Secure Login
           </button>
         </form>
-
-        {message && (
-          <p className="mt-4 text-center text-sm">{message}</p>
-        )}
       </div>
     </div>
   );
